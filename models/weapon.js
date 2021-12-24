@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 let WeaponSchema = new Schema({
     
-    id:String,
+    wID:String,
     type:String,
     name:String,
     ability:String,

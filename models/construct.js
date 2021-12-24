@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 
 const ConsSchema = new mongoose.Schema({
-    id:String,
+
+    cID:String,
     faction:String,
     content:String,
     rank:String,
