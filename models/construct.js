@@ -1,7 +1,8 @@
+const { ObjectId } = require('bson')
 const mongoose = require('mongoose')
 
 const ConsSchema = new mongoose.Schema({
-
+    _id:ObjectId,
     cID:String,
     faction:String,
     content:String,
