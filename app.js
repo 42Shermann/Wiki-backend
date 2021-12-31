@@ -8,7 +8,7 @@ const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
 
-dotenv.config({path: 'config.env'})
+dotenv.config({path: '.env'})
 
 const uri =  `mongodb+srv://${process.env.mongoDBname}:${process.env.password}@${process.env.clusterUrl}?retryWrites=true&w=majority`;
 
