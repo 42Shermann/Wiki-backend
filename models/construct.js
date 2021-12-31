@@ -16,6 +16,7 @@ const ConsSchema = new mongoose.Schema({
     img:String,
     desc:String,
     chibiImg:{
+      avatar:String,
       awaken:String,
       dorm:String
     },
@@ -70,6 +71,13 @@ const ConsSchema = new mongoose.Schema({
         cate:String,
         name:String,
         skillDesc:String,
+        img:String
+      }
+    ],
+    coating:[
+      {
+        id:String,
+        name:String,
         img:String
       }
     ],

@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config({path: 'config.env'})
 
 wepRouter.get('/', (request, response) => {
-    Weapon.find({}).populate('const', 'Model img id cID').then(cons => {
+    Weapon.find({}).populate('const', 'Model chibiImg id cID').then(cons => {
       response.json(cons)
     })
   })
