@@ -4,6 +4,7 @@ const cors = require('cors')
 const dotenv = require('dotenv');
 const constRouter = require('./controller/construct')
 const wepRouter = require('./controller/weapon')
+const memRouter = require('./controller/memory')
 const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
@@ -29,6 +30,7 @@ app.use(middleware.requestLogger)
 
 app.use('/api/construct', constRouter)
 app.use('/api/weapon', wepRouter)
+app.use('/api/memory', memRouter)
 
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
