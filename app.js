@@ -5,7 +5,10 @@ const dotenv = require('dotenv');
 const constRouter = require('./controller/construct')
 const wepRouter = require('./controller/weapon')
 const memRouter = require('./controller/memory')
+<<<<<<< HEAD
 const commentRouter = require('./controller/comment')
+=======
+>>>>>>> f302027d736bc783e3124f65b8acad858d4f5a02
 const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
@@ -32,7 +35,10 @@ app.use(middleware.requestLogger)
 app.use('/api/construct', constRouter)
 app.use('/api/weapon', wepRouter)
 app.use('/api/memory', memRouter)
+<<<<<<< HEAD
 app.use('/api/comment', commentRouter)
+=======
+>>>>>>> f302027d736bc783e3124f65b8acad858d4f5a02
 
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
